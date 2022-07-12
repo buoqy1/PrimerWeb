@@ -1,0 +1,187 @@
+.icons{
+    display: flex;
+    column-gap: 25px;
+    justify-content: center;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size:35px;
+    border-radius: 50%;
+    outline: 2px solid #000;
+    transition-property: outline-offset, outline-color,background-color ;
+    transition: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .30s;
+}
+.icon--instagram:hover{
+    background-image:
+    radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    outline-color: #a02d76;
+} 
+.icon--twitter:hover{
+    background-color:#1da1f2 ;
+    outline-color: #1da1f2;
+}
+.icon--likedin:hover{
+    background-color: #0077B5;
+    outline-color: #0077B5;
+}
+.icon--git:hover{ 
+    background-color:#2ea44f;
+    outline-color: #2ea44f;
+}
+.icon--face:hover{
+    background-color: #3b5998;
+    outline-color: #3b5998;
+}
+
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+}
+
+
+
+.loader{
+    position:absolute;
+    top:50%;
+    left:calc(50% + 58px);
+    transform: translate(-50%,-50%) rotate(-90deg) scale(4);
+}
+.loader span{
+    position: relative;
+    display: block;
+    height: 58px;
+    width: 2px;
+    margin-top: -46px;
+    background:transparent;
+    animation: animate 2s linear infinite;
+}
+.loader span::before, .loader span::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background: red;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 5);
+}
+
+.loader span::before{
+    top: 0px;
+}
+.loader span::after{
+    bottom: 0px;
+}
+.loader span:nth-child(1)::before,
+.loader span:nth-child(1)::after{
+    background-color: #ff0;
+}
+
+.loader span:nth-child(2)::before,
+.loader span:nth-child(2)::after{
+    background-color: #ff24a8;
+}
+
+.loader span:nth-child(3)::before,
+.loader span:nth-child(3)::after{
+    background-color: #0f0;
+}
+
+.loader span:nth-child(4)::before,
+.loader span:nth-child(4)::after{
+    background-color: #2196f3;
+}
+
+.loader span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.loader span:nth-child(2){
+    animation-delay: .5s;
+}
+
+.loader span:nth-child(3){
+    animation-delay: 1s;
+}
+
+.loader span:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+@keyframes animate{
+    0%, 75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+.charge{
+    width: 120px;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.charge span{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: auto;
+}
+.ball{
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    background-color: #000;
+    animation: bounce .5  infinite;
+}
+.ball:nth-child(2){
+    animation-delay: .16s;
+}
+.ball:nth-child(3){
+    animation-delay: .32s;
+}
+
+
+@keyframes bounce {
+    from {
+        transform: scaleX(1.25);
+    }
+    to{
+        transform: translateY(10px) scaleX(1); 
+    }
+}
+
+
