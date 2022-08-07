@@ -1,0 +1,72 @@
+* {
+    font-family: "Verdana", sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    margin: 0;
+    
+}
+.contenido{
+    display: flex;
+    width: 450px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 50px;
+    background-color: #000;
+}
+.contenido img{
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    flex:   0 0 100%;
+    padding: 30px;
+    scroll-snap-align: start;
+    border-radius: 30px;
+}
+.card h1 {
+    margin-bottom: 2rem;
+}
+.card:nth-child(1) {
+    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(-229deg, #0093E9, #80D0C7);
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(-229deg, #50d990, #d4d054);
+}
+
+.card:nth-child(4) {
+    background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+}
+
+.card:nth-child(5) {
+    background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+}
+
+::-webkit-scrollbar{
+    height: 50px;
+    width: 50px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius:10px ;
+    background-color: #0093E9;
+}
+::-webkit-scrollbar-thumb{
+    background-image: url(img/slider.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb::after{
+    border-radius: 10px;
+}
+
