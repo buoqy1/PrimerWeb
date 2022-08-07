@@ -1,5 +1,5 @@
 * {
-    font-family: "Verdana", sans-serif;
+    font-family: varino;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     letter-spacing: 0px;
@@ -7,15 +7,21 @@
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
     margin: 0;
-    
+    background: ;
+}
+.contenedor{
+    background-color: grey;
+    width: 100%;
+    border: #000 1px solid;
 }
 .contenido{
     display: flex;
-    width: 450px;
+    margin:0% 25%;  
+    width: 50%;
     overflow: auto;
     scroll-snap-type: x mandatory;
     scroll-padding: 25px;
-    column-gap: 50px;
+    column-gap: 5px;
     background-color: #000;
 }
 .contenido img{
@@ -23,10 +29,11 @@
     object-fit: cover;
 }
 .card{
-    flex:   0 0 100%;
+    flex:  0  0 100%;
     padding: 30px;
     scroll-snap-align: start;
     border-radius: 30px;
+    margin: 5% 3%;
 }
 .card h1 {
     margin-bottom: 2rem;
@@ -40,16 +47,14 @@
 }
 
 .card:nth-child(3) {
-    background: linear-gradient(-229deg, #50d990, #d4d054);
+    background: linear-gradient(-180deg,  #FC00FF,#00DBDE );
 }
 
 .card:nth-child(4) {
     background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
 }
 
-.card:nth-child(5) {
-    background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
-}
+
 
 ::-webkit-scrollbar{
     height: 50px;
@@ -61,7 +66,7 @@
     background: linear-gradient(-229deg, #00DBDE, #FC00FF)
 }
 ::-webkit-scrollbar-thumb{
-    background-image: url(img/slider.jpg);
+    background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
