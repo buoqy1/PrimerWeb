@@ -1,5 +1,7 @@
-*{
+
+body{
     background-color: #020e26;
+    height: 200vh;    
 }
 .icons{
     display: flex;
@@ -197,7 +199,7 @@
 
 body{
     height:98vh;
-    } 
+}
 .body{
     border: #0077B5 solid 1px;
     display:flex;
@@ -240,7 +242,7 @@ body{
 }
 }
 
-
+/*
 .subcontainer__ul{
     display: none;
 }
@@ -265,7 +267,7 @@ body{
 }
 .sub:hover>.subcontainer__ul{
     display: block;
-}
+}*/
 
 
 
@@ -323,41 +325,201 @@ body{
 }
 
 
-.comtenido{
-    display: flex;
-    width: 350px;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 25px;
-    column-gap: 20px;
+
+
+.footer a, li{
+    text-decoration: none;
+    list-style-type: none;
 }
-.card{
-    flex: 0 0 100%;
-    padding: 30px;
-    scroll-snap-align: start;
-    border-radius: 30px;
+.footer a{
+    color: #fff;
+    line-height: 35px;
+    font-size: 20px;
 }
-.card h1 {
-    margin-bottom: 2rem;
+.footer a:hover{
+    color: #bb93fc;
 }
-.card:nth-child(1) {
-    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+.single-footer ul{
+    margin: 0%;
+    padding: 0%;
 }
 
-.card:nth-child(2) {
+.footer{
+    margin-top: 600px;
+    width: 100%;
+    height: 25%;
+    color: #fff;
+    border: #000 solid 1px;
     background: linear-gradient(-229deg, #0093E9, #80D0C7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background: linear-gradient(-229deg, #80D0C7, #0093E9);
+    overflow: hidden;
+    
+}
+.container::after{
+    content:"";
+    position: absolute;
+    background: #000;
+    inset: 6px;
+    
+}
+.container::before{
+    content:"";
+    position: absolute;
+    width: 120%;
+    height: 90%;
+    margin: 0 0 0 -10%; ;    
+    background: linear-gradient(-229deg, #0004ff, #FC00FF);
+    animation: animates 7s linear infinite;
+    z-index: ;
 }
 
-.card:nth-child(3) {
-    background: linear-gradient(-229deg, #50d990, #d4d054);
+.container h4{
+    font-size: 30px;
+    margin: 0;
+    padding: 10;
+    z-index: 1;
+}
+.container ul{
+    margin: 0;
+    padding: 10;
+}
+.container h4::selection{
+    background: rgba(255, 255, 255, 0.5);
+}
+.container  a::selection{
+    background: rgba(255, 255, 255, 0.5);
+}
+.single-footer{
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    margin: 6px;
+    z-index: 1;
+}
+.single-footer ul{
+    text-align: justify;
+    padding: 0 0 0 px;
+}
+.single-footer-container{
+    display: flex;
+    align-items: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.single-footer-adress{
+    display: flex;
+    justify-content: space-betw;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    margin-top: -30px;
+}
+.signup-form{
+    background-color: transparent;
+    height:  60px;
+    width:  200px;
+    border-radius: 10px;
+    text-align:center ;
+    border: none;
+}
+.suscribe{
+    background-color: #fff;
+    border-radius: 10px;
+    
 }
 
-.card:nth-child(4) {
-    background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+.subscribe-input{
+    background-color: #fff;
+    height: 50px;
+    width: 75%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    border: none;
+    font-size: 20px;
+    
+}
+.subscribe-input::placeholder{
+    color: #000;
+}
+.subscribe-input:focus{
+    outline: none;
+}
+.subscribe-btn{
+    color: #0093E9;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    padding: 0 10 0 0;
+    font-size: 20px;
+}
+.social-profile ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.card:nth-child(5) {
-    background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+
+.box{
+    position:relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
 }
+.box h1{
+    color: #38ed38;
+    font-size: 4rem;
+    position: relative;
+    z-index: 1;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    background: #000;
+    inset: 4px;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 150px;;
+    height:140%; 
+    background: linear-gradient(to left, #0093E9, #80D0C7);
+    animation: animates 4s linear infinite;
+}
+
+@keyframes animates {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 /*
 @media only screen and (max-width:600px ){
