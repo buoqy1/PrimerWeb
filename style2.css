@@ -6,7 +6,6 @@
     /*-moz-osx-font-smoothing: grayscale;*/
     /*scroll-behavior: smooth;*/
     margin: 0;
-    background: ;
 }
 .contenedor{
     background: linear-gradient(-229deg, #0093E9, #80D0C7);;
@@ -253,5 +252,43 @@
     .nav-input:checked + .nav-buttom .nav-icon{
         transform: translateY(-9px);
     }
+
+}*/
+.botones{
+    height: 195px;
+    margin: 5px 5px 60px 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.botones button{
+    border: outset 1px #00aced;  ;
+    font-size: 17px;
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    transition: all .6s;
+    color: #000;
+}
+
+
+.botones button:hover{
+    background-color: #00aced;
+    color: #fff;
+    box-shadow: inset 0px 0px 10px 2px #ccc;
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 35px 15px 35px 15px;
+}
+.botones button:active{
+    background-color: #00aced;
+    color: #fff;
+    box-shadow: inset 0px 0px 10px 2px #ccc;
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 35px 15px 35px 15px;
 
 }
