@@ -1,3 +1,11 @@
+@font-face{
+    font-family: Fuentenueva;
+    src: url(Fuentes/Varino\ -\ Normal.otf);
+}
+@font-face{
+    font-family: god;
+    src: url(/Fuentes/GODOFWAR.TTF);
+}
 .container{
     margin: auto;
     width: 75%;
@@ -90,6 +98,7 @@
     justify-content: space-around;
     align-items: flex-start; 
     transition: .5s;
+    font-family: Fuentenueva;
 }
 
 .grid h3{
@@ -111,6 +120,7 @@
     justify-content: space-around;
     align-items: flex-start;  
     transition: .5s;
+    font-family: god;
 }
 .grid-2 h3{
     text-align: left;

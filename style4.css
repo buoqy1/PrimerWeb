@@ -1,0 +1,46 @@
+body{
+    color: #000;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.theme{
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.theme-fill, .theme-icon{
+    transition: transform var(--transDur) ease-in-out;
+}
+
+.theme-fill{
+    background-color: #000;
+    display: block;
+    mix-blend-mode: difference;
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    transform: translateX(-100%);
+}
+
+.theme-icon, .theme-toggle{
+    z-index: 1;
+}
+
+.theme-icon, .theme-icon-part{
+    position: absolute;
+}
+
+.theme-icon{
+    display: block;
+    top: .75em;
+    left: .75em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+@keyframes transDur{
+
+}

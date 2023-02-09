@@ -3,6 +3,8 @@ body{
     background-color: #020e26;
     height: 200vh;    
 }
+
+/*iconos*/
 .icons{
     display: flex;
     column-gap: 25px;
@@ -74,10 +76,10 @@ body{
 }
 
 
-
+/* pelotas de carga*/
 .loader{
     position:absolute;
-    top:50%;
+    top:58%;
     left:calc(50% + 58px);
     transform: translate(-50%,-50%) rotate(-90deg) scale(4);
 }
@@ -154,7 +156,7 @@ body{
 }
 
 
-
+/* carga /* no anda*/
 
 .charge{
     width: 120px;
@@ -194,13 +196,14 @@ body{
 }
 */
 
+/* texto difuminado*/
 
-
-
-body{
-    height:98vh;
+.container-body{
+    height: 98vh;
+    text-align: center;
 }
 .body{
+    height: 25vh;
     border: #0077B5 solid 1px;
     display:flex;
     align-items:center;
@@ -212,6 +215,8 @@ body{
     position:absolute;
     color:#ffffff;
     font-size:120px;
+    top: 200px;
+    left: 550px;
     transform:
         translate(-50%,-51%);
     animation:
@@ -270,9 +275,12 @@ body{
 }*/
 
 
+/* texto sorpresa*/
 
-
-
+.title{
+    margin-top: 400px;
+    margin-bottom: -400;
+}
 .title span {
     --total: calc(var(--duration)
     + var(--delay));
@@ -325,7 +333,7 @@ body{
 }
 
 
-
+/* idea de footer*/
 
 .footer a, li{
     text-decoration: none;
@@ -354,6 +362,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .container{
     position: relative;
@@ -469,6 +478,7 @@ body{
     height: 100%;
     padding: 0 10 0 0;
     font-size: 20px;
+    cursor: pointer;
 }
 .social-profile ul{
     display: flex;
@@ -477,6 +487,7 @@ body{
     justify-content: space-evenly;
 }
 
+/* borde en movimiento*/
 
 .box{
     position:relative;
@@ -488,6 +499,7 @@ body{
     background: #000;
     border-radius: 5px;
     overflow: hidden;
+    margin: auto;
 }
 .box h1{
     color: #38ed38;
@@ -592,6 +604,31 @@ body{
     }
 }
 */
+/*f
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+
+    animation: typing 2s steps(12), blink .5 infinite step-end alternate ;
+    overflow: hidden;
+    color: #fff;
+}
+
+@keyframes typing{
+    from {
+        width: 0
+    }
+}
+@keyframes blink{
+    50% {
+        border-color: transparent
+    }
+}*/
+
+/* ejemplo de botones*/
 
 .botones{
     height: 195px;
